@@ -202,3 +202,42 @@ x==========x]
 [2025-03-27 21:42:20,811: INFO: step_04_evaluation: >>>>>> stage Evaluation stage completed <<<<<<
 
 x==========x]
+[2025-03-27 21:53:47,661: INFO: step_02_baseline_model_preparation: *******************]
+[2025-03-27 21:53:47,661: INFO: step_02_baseline_model_preparation: >>>>>> stage Prepare Base Model Stage started <<<<<<]
+[2025-03-27 21:53:47,664: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-03-27 21:53:47,666: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-03-27 21:53:47,667: INFO: common: created directory at: artifacts]
+[2025-03-27 21:53:47,668: INFO: common: created directory at: artifacts/prepare_base_model]
+[2025-03-27 21:53:48,473: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-03-27 21:53:48,793: INFO: step_02_baseline_model_preparation: >>>>>> stage Prepare Base Model Stage completed <<<<<<
+
+x==========x]
+[2025-03-27 21:54:01,769: INFO: step_03_model_training: *******************]
+[2025-03-27 21:54:01,769: INFO: step_03_model_training: >>>>>> stage Training started <<<<<<]
+[2025-03-27 21:54:01,771: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-03-27 21:54:01,774: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-03-27 21:54:01,775: INFO: common: created directory at: artifacts]
+[2025-03-27 21:54:01,775: INFO: common: created directory at: artifacts\training]
+[2025-03-27 21:55:07,737: INFO: step_03_model_training: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2025-03-27 21:55:19,087: INFO: step_04_evaluation: *******************]
+[2025-03-27 21:55:19,087: INFO: step_04_evaluation: >>>>>> stage Evaluation stage started <<<<<<]
+[2025-03-27 21:55:19,088: INFO: step_04_evaluation: >>>>>> Dags hub repository initializing <<<<<<]
+[2025-03-27 21:55:19,923: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-03-27 21:55:19,935: INFO: helpers: Accessing as shubhamair1996]
+[2025-03-27 21:55:20,604: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/repos/shubhamair1996/chestcancer_prediction_using_mlflow_dvc "HTTP/1.1 200 OK"]
+[2025-03-27 21:55:21,242: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-03-27 21:55:21,245: INFO: helpers: Initialized MLflow to track repo "shubhamair1996/chestcancer_prediction_using_mlflow_dvc"]
+[2025-03-27 21:55:21,246: INFO: helpers: Repository shubhamair1996/chestcancer_prediction_using_mlflow_dvc initialized!]
+[2025-03-27 21:55:21,247: INFO: step_04_evaluation: >>>>>> Dags hub repository initialized successfull <<<<<<]
+[2025-03-27 21:55:21,250: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-03-27 21:55:21,252: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-03-27 21:55:21,252: INFO: common: created directory at: artifacts]
+[2025-03-27 21:55:38,490: INFO: common: json file saved at: scores.json]
+[2025-03-27 21:55:38,491: INFO: common: json file saved at: scores.json]
+[2025-03-27 21:55:42,028: WARNING: save: Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op while saving (showing 5 of 14). These functions will not be directly callable after loading.]
+[2025-03-27 21:55:42,615: INFO: builder_impl: Assets written to: C:\Users\Dell\AppData\Local\Temp\tmpakx1do_4\model\data\model\assets]
+[2025-03-27 21:56:31,608: INFO: step_04_evaluation: >>>>>> stage Evaluation stage completed <<<<<<
+
+x==========x]
