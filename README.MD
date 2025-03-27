@@ -59,6 +59,6 @@ $ dvc repro  # reproduce the results of a pipeline or a specific stage within a 
 | `dvc lock`                | Locks a pipeline or stage from modification.                                    |
 
 #### dvc pipeline skipping the unchanged files run
-![alt text](images/image.png)
+![alt text](Images/image.png)
 
-![dvc datapipeline](images/image_datapipeline.png)
+![dvc datapipeline](Images/image_datapipeline.png)
