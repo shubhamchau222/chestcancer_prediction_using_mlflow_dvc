@@ -153,3 +153,52 @@ x==========x]
 [2025-03-27 21:29:54,587: INFO: step_01_data_ingestion: >>>>>> stage Data Ingestion Stage completed <<<<<<
 
 x==========x]
+[2025-03-27 21:33:42,089: INFO: step_01_data_ingestion: >>>>>> stage Data Ingestion Stage started <<<<<<]
+[2025-03-27 21:33:42,091: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-03-27 21:33:42,094: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-03-27 21:33:42,095: INFO: common: created directory at: artifacts]
+[2025-03-27 21:33:42,096: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-03-27 21:33:42,096: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1tEWnOm8-SiIPW6BDMuyR5gmgRL7EAPrd/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-03-27 21:34:02,639: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1tEWnOm8-SiIPW6BDMuyR5gmgRL7EAPrd/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-03-27 21:34:03,644: INFO: step_01_data_ingestion: >>>>>> stage Data Ingestion Stage completed <<<<<<
+
+x==========x]
+[2025-03-27 21:34:23,320: INFO: step_02_baseline_model_preparation: *******************]
+[2025-03-27 21:34:23,320: INFO: step_02_baseline_model_preparation: >>>>>> stage Prepare Base Model Stage started <<<<<<]
+[2025-03-27 21:34:23,322: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-03-27 21:34:23,326: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-03-27 21:34:23,326: INFO: common: created directory at: artifacts]
+[2025-03-27 21:34:23,327: INFO: common: created directory at: artifacts/prepare_base_model]
+[2025-03-27 21:34:24,162: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-03-27 21:34:24,531: INFO: step_02_baseline_model_preparation: >>>>>> stage Prepare Base Model Stage completed <<<<<<
+
+x==========x]
+[2025-03-27 21:34:35,370: INFO: step_03_model_training: *******************]
+[2025-03-27 21:34:35,370: INFO: step_03_model_training: >>>>>> stage Training started <<<<<<]
+[2025-03-27 21:34:35,375: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-03-27 21:34:35,378: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-03-27 21:34:35,380: INFO: common: created directory at: artifacts]
+[2025-03-27 21:34:35,381: INFO: common: created directory at: artifacts\training]
+[2025-03-27 21:40:32,653: INFO: step_03_model_training: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2025-03-27 21:40:52,650: INFO: step_04_evaluation: *******************]
+[2025-03-27 21:40:52,650: INFO: step_04_evaluation: >>>>>> stage Evaluation stage started <<<<<<]
+[2025-03-27 21:40:52,651: INFO: step_04_evaluation: >>>>>> Dags hub repository initializing <<<<<<]
+[2025-03-27 21:40:53,491: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-03-27 21:40:53,504: INFO: helpers: Accessing as shubhamair1996]
+[2025-03-27 21:40:54,303: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/repos/shubhamair1996/chestcancer_prediction_using_mlflow_dvc "HTTP/1.1 200 OK"]
+[2025-03-27 21:40:55,019: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-03-27 21:40:55,024: INFO: helpers: Initialized MLflow to track repo "shubhamair1996/chestcancer_prediction_using_mlflow_dvc"]
+[2025-03-27 21:40:55,033: INFO: helpers: Repository shubhamair1996/chestcancer_prediction_using_mlflow_dvc initialized!]
+[2025-03-27 21:40:55,033: INFO: step_04_evaluation: >>>>>> Dags hub repository initialized successfull <<<<<<]
+[2025-03-27 21:40:55,037: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-03-27 21:40:55,043: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-03-27 21:40:55,044: INFO: common: created directory at: artifacts]
+[2025-03-27 21:41:18,919: INFO: common: json file saved at: scores.json]
+[2025-03-27 21:41:18,920: INFO: common: json file saved at: scores.json]
+[2025-03-27 21:41:25,631: WARNING: save: Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op while saving (showing 5 of 14). These functions will not be directly callable after loading.]
+[2025-03-27 21:41:26,446: INFO: builder_impl: Assets written to: C:\Users\Dell\AppData\Local\Temp\tmpfi2a69ek\model\data\model\assets]
+[2025-03-27 21:42:20,811: INFO: step_04_evaluation: >>>>>> stage Evaluation stage completed <<<<<<
+
+x==========x]
