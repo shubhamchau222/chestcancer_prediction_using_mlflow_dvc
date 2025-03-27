@@ -18,5 +18,16 @@
 # install requirements
 $ pip install -r requirements.txt
 
+```
+
+## Dvc Commands
+
+```
+$ dvc init
+
+$ dvc dag
+
+$ dvc repro  #reproduce the results of a pipeline or a specific stage within a pipeline.
+
 
 ```
