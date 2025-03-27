@@ -21,8 +21,6 @@ class PrepareBaseModel:
 
         self.save_model(path=self.config.base_model_path, model=self.model)
 
-
-    
     @staticmethod
     def _prepare_full_model(model, classes, freeze_all, freeze_till, learning_rate):
         if freeze_all:
