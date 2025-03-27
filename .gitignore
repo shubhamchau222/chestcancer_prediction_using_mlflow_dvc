@@ -1,6 +1,7 @@
 # file wants to untrack
 *.zip
 *.png
+*.h5
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
