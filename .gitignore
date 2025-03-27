@@ -1,6 +1,7 @@
 # file wants to untrack
 *.zip
-*.png
+# *.png
+train/
 *.h5
 
 # Byte-compiled / optimized / DLL files
